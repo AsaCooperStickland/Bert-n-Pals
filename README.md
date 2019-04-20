@@ -1,7 +1,7 @@
-# PyTorch implementation of BERT and PALs, work by Asa Cooper Stickland and Iain Murray, University of Edinburgh.
+# PyTorch implementation of BERT and PALs
 
 ## Introduction
-
+Work by Asa Cooper Stickland and Iain Murray, University of Edinburgh.
 Code for [BERT and PALs](https://arxiv.org/abs/1902.02671); most of this code is from https://github.com/huggingface/pytorch-pretrained-BERT (who are not affilied with the authors) and we reuse some of their documentation. 
 The only files we modified/created for multi-task learning were `modeling.py` which contains the BERT model formulation and `run_multi_task.py` which performs multi-task training on the GLUE benchmark.
 
