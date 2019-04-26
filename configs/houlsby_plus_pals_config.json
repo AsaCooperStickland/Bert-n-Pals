@@ -1,5 +1,6 @@
 {
   "hidden_size_aug": 156,
+  "extra_dim": 50,
   "houlsby": true,
   "pals": true,
   "attention_probs_dropout_prob": 0.1,
