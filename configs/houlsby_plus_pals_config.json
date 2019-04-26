@@ -1,6 +1,6 @@
 {
   "hidden_size_aug": 156,
-  "google": true,
+  "houlsby": true,
   "pals": true,
   "attention_probs_dropout_prob": 0.1,
   "hidden_act": "gelu",
