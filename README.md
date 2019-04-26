@@ -80,11 +80,11 @@ Where `$THIS_MACHINE_INDEX` is an sequential index assigned to each of your mach
 
 We provide some basic details of the parts of the code used for multi-task learning:
 
-`BertMulti`: This class contains two linear layers which project down to the smaller hidden size (called `hidden_size_aug` in the code), and optionally inbetween, a multi-head attention mechanism without the final projection matrix.
+`BertPals` and `BertLowRank`: These classes contains two linear layers which project down to the smaller hidden size (called `hidden_size_aug` in the code), and, for PALs, a multi-head attention mechanism without the final projection matrix inbetween.
 
 `BertLayer`: In the original code this class contains an entire BERT layer, and we modify it to include an optional BERTMulti layer or an LHUC transformation.
 
-`BertEncoder`: In the original code this implemented a module that applied a series of BERT layers to the input. We modify this class, to optionally tie together all the encoder and decoder matrices, and either set each layer to `multi-task mode', or add attention modules to add to the top of the model. 
+`BertEncoder`: In the original code this implemented a module that applied a series of BERT layers to the input. We modify this class, to optionally tie together all the encoder and decoder matrices, and either set each layer to 'multi-task mode', or add attention modules to add to the top of the model. 
 
 We implement our multi-task sampling methods (annealed, proportional etc.) with `np.random.choice`. 
 
