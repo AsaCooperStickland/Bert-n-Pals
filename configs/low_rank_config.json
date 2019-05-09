@@ -1,5 +1,5 @@
 {
-  "hidden_size_aug": 128,
+  "hidden_size_aug": 100,
   "mult": true,
   "attention_probs_dropout_prob": 0.1,
   "hidden_act": "gelu",
