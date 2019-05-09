@@ -1,5 +1,5 @@
 {
-  "hidden_size_aug": 300,
+  "hidden_size_aug": 204,
   "mult": true,
   "pals": true,
   "attention_probs_dropout_prob": 0.1,
